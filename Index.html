@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Thinking - Tekenmethodes</title>
     <link rel="icon" href="assets/Logo.png" type="x-icon/image">
-    <link rel="stylesheet" href="https://lyannebos.github.io/look-and-feel-styleguide/styleguide-visual-thinking.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://lyannebos.github.io/look-and-feel-styleguide/styleguide-visual-thinking.css">
 </head>
 
 <body>
     <header>
         <a href="#"><img src="assets/Logo.png" alt="Visual Thinking Logo" class="logo"></a>
-        <button aria-hidden="true"><img src="assets/hamburger.svg" alt="hamburger menu"></button>
-        <nav class="menu">
-            <button aria-hidden="true"><img src="assets/close.svg" alt="close hamburger menu"></button>
+        <button class="hamburger-menu" popovertarget="hamburger-list"><img src="assets/hamburger.svg"
+                alt="hamburger menu"></button>
+        <nav class="menu" popover id="hamburger-list">
+            <button popovertarget="hamburger-list" class="close-hamburger"><img src="assets/close.svg"
+                    alt="close hamburger menu"></button>
             <ul>
                 <li><a href="#">Oefenen</a></li>
                 <li><a href="#">verdiepen</a></li>
@@ -24,11 +26,12 @@
                 <li><a href="#" class="mobile-material">Material Indienen</a></li>
             </ul>
         </nav>
-
-        <img src="assets/search.png" alt="Search button" class="header-icon">
-        <img src="assets/Profile.png" alt="profile button" class="header-icon">
-        <img src="assets/favorite.png" alt="favorites button" class="header-icon">
-        <button>Material Indienen</button>
+        <ul class="icons">
+            <li><img src="assets/search.png" alt="Search button" class="header-icon"></li>
+            <li><img src="assets/Profile.png" alt="profile button" class="header-icon"></li>
+            <li><img src="assets/favorite.png" alt="favorites button" class="header-icon"></li>
+        </ul>
+        <button class="material-dskt">Material Indienen</button>
     </header>
     <main></main>
     <footer></footer>
