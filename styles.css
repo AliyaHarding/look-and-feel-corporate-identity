@@ -7,10 +7,8 @@
 /* HEADER */
 header {
     display: flex;
-    gap: 1em;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 4em 20px 4em;
+    gap: 15px;
     border-bottom: 1px solid var(--color-neutral-normal);
 
     .material-dskt {
