@@ -35,7 +35,6 @@ header {
         position: absolute;
         top: 20px;
         right: 20px;
-        z-index: 99;
     }
 
     .icons {
@@ -60,7 +59,6 @@ header {
     .menu {
         margin: 0;
         width: 100%;
-        height: 100vh;
     }
 
 
