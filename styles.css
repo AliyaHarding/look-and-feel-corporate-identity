@@ -218,3 +218,8 @@ main {
         font-size: 15px;
     }
 }
+
+/* FOOTER */
+footer{
+    background-color: var(--dark-accent);
+}
