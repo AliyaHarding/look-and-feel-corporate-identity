@@ -8,7 +8,7 @@
     <link rel="icon" href="assets/Logo.png" type="x-icon/image">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://lyannebos.github.io/look-and-feel-styleguide/styleguide-visual-thinking.css">
-    
+
 </head>
 
 <body>
@@ -43,10 +43,24 @@
             </ul>
         </nav>
         <fieldset>
-        <label for="search"><img src="assets/grey-search.svg" alt="search Tekenmethode"></label>
-        <input type="search" id="search" placeholder="Zoeken..." name="tekenmethode"  inputmode="search" enterkeyhint="search"><img src="assets/camera.svg" alt="picture">
+            <label for="search"><img src="assets/grey-search.svg" alt="search Tekenmethode"></label>
+            <input type="search" id="search" placeholder="Zoeken..." name="tekenmethode" inputmode="search"
+                enterkeyhint="search"><img src="assets/camera.svg" alt="picture">
         </fieldset>
+        <button class="mobile-filter" popovertarget="categories"><img src="assets/filter.svg" alt="filter icon"></button>
+        <ul popover id="categories" class="fliter-menu">
+            <button popovertarget="categories"><img src="assets/close.svg" alt="close filter"></button>
+            <li><button class="category"><img src="assets/bekijk-alles.svg" alt="bekijk alles category" width="60px"> Bekijk alles</button></li>
+            <li><button class="category"><img src="assets/op-vraag.svg" alt="op vraag category" width="60px">Op vraag</button></li>
+            <li><button class="category"><img src="assets/leren-over-jezelf-en-reflecteren.svg" alt="leren over jezelf en reflecteren category" width="60px">Leren over jezelf en reflecteren</button></li>
+            <li><button class="category"><img src="assets/onderzoeken-en-begrijpen.svg" alt="onderzoeken-en-begrijpen category" width="60px">Onderzoeken en begrijpen</button></li>
+            <li><button class="category"><img src="assets/creatief-denken.svg" alt="creatief-denken category" width="60px">Creatief denken</button></li>
+            <li><button class="category"><img src="assets/Organiseren-en-plannen.svg" alt="Organiseren-en-plannen category" width="60px">Organiseren en plannen</button></li>
+            <li><button class="category"><img src="assets/communiceren-en-presenteren.svg" alt="communiceren-en-presenteren category" width="60px">Communiceren en presenteren</button></li>
+            <li><button class="category"><img src="assets/leren-over-anderen.svg" alt="leren-over-anderen category" width="60px"> Leren over anderen</button></li>
+        </ul>
     </main>
     <footer></footer>
 </body>
+
 </html>
