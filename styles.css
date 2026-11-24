@@ -2,6 +2,7 @@
     box-sizing: border-box;
     background-color: var(--light-accent);
     color: var(--dark-accent);
+    margin: 0;
 }
 
 /* HEADER */
@@ -9,7 +10,7 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 1px solid var(--color-neutral-normal);
 
     .material-dskt {
@@ -66,7 +67,7 @@ header {
 
 /* MAIN */
 main {
-    padding: 20px 5px;
+    padding: 20px 15px;
 
     /* breadcrumbs styling */
     .breadcrumbs ul {
@@ -189,6 +190,7 @@ main {
         background-color: var(--color-theme-01-neutral);
         color: var(--dark-accent);
         padding: 3px;
+        margin-bottom: 10px;
     }
 
     .category-quote h2 {
@@ -220,6 +222,103 @@ main {
 }
 
 /* FOOTER */
-footer{
+footer {
+    padding: 80px 40px;
     background-color: var(--dark-accent);
+    color: var(--color-interactive-light);
+
+    * {
+        background-color: transparent;
+        color: inherit;
+        font: inherit;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    img {
+        display: block;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* logo and social icons */
+    .footer-logo {
+        width: min(9.75rem, 65%);
+        height: auto;
+        margin-inline: auto;
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: center;
+        gap: 1.15rem;
+        margin-top: 1.8rem;
+    }
+
+    /* footer navigation styling */
+    .footer-menu {
+        max-width: 32rem;
+        margin: clamp(2.75rem, 17vw, 4.25rem) auto 0;
+        font: 700 1.4rem/1.25 "Quantico", sans-serif;
+    }
+
+    .footer-menu>ul {
+        display: grid;
+        gap: 1.85rem;
+    }
+
+    .footer-menu summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .footer-menu summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .footer-menu details[open] summary img {
+        rotate: 180deg;
+    }
+
+    .footer-menu details a {
+        display: inline-block;
+        margin-top: 0.65rem;
+        font-size: 1rem;
+    }
+
+    /* copyright and legal links */
+    .footer-legal {
+        max-width: 24rem;
+        margin: clamp(2.75rem, 18vw, 4.5rem) auto 0;
+        color: var(--color-neutral-light, #f3f3f6);
+        font: 100 1rem/1.35 "Yrsa", Georgia, serif;
+        text-align: center;
+    }
+
+    .footer-legal p {
+        margin: 0;
+    }
+
+    .footer-legal ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.5rem 1rem;
+        max-width: 16.75rem;
+        margin: 0.85rem auto 0;
+    }
 }
