@@ -134,8 +134,14 @@ main {
         display: flex;
         align-items: center;
         align-content: flex-start;
-        gap: 20px;
-        padding: 20px 10px;
+        gap: 10px;
+        padding: 5px;
+        border-radius: 50px;
+        margin-bottom: 10px;
+
+        img{
+            background-color: transparent;
+        }
     }
     .category:nth-child(1),
     .category:nth-child(2) {
