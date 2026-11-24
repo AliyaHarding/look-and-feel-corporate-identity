@@ -63,3 +63,25 @@ header {
 
 
 }
+
+/* MAIN */
+main {
+    padding: 20px 2px 20px 2px;
+
+    .breadcrumbs ul {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+
+    .breadcrumbs ul>li:not(:last-child)::after {
+        content: ">";
+        color: var(--darkBlue);
+        margin-left: 10px;
+    }
+
+    .breadcrumbs ul>li:last-child {
+        font-weight: bold;
+    }
+
+}
