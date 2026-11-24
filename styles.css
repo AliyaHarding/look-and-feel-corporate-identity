@@ -92,6 +92,7 @@ main {
         gap: 10px;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 15px;
     }
 
     input[type="search"] {
@@ -183,4 +184,37 @@ main {
         border: 2px solid var(--color-theme-06-neutral);
     }
 
+    /* tiny adjustments */
+    .category-title {
+        background-color: var(--color-theme-01-neutral);
+        color: var(--dark-accent);
+        padding: 3px;
+    }
+
+    .category-quote h2 {
+        background-color: var(--color-theme-01-neutral);
+        padding: 5px;
+        text-align: center;
+        color: var(--dark-accent);
+    }
+
+    /* tekenmethode grid layout */
+    .tekenmethodes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .tekenmethodes-grid> :nth-child(10n + 7),
+    .tekenmethodes-grid> :nth-child(10n + 10) {
+        grid-column: 1 / -1;
+    }
+
+    .tekenmethodes-grid img {
+        width: 100%;
+    }
+
+    .tekenmethodes-grid h3 {
+        font-size: 15px;
+    }
 }
