@@ -75,6 +75,7 @@ main {
         gap: 10px;
         list-style-type: none;
         padding: 0;
+        margin-bottom: 10px;
     }
 
     .breadcrumbs ul>li:not(:last-child)::after {
@@ -112,18 +113,35 @@ main {
 
     /* mobile filters styling */
     .mobile-filter {
+        display: grid;
+        place-items: center;
+        width: 60px;
+        height: 60px;
+        margin: -60px 5% 0 auto;
         border-radius: 50%;
         background-color: var(--dark-accent);
         border: none;
-        padding: 20px;
-        position: fixed;
-        top: 85%;
-        right: 5%;
+        padding: 0;
+        /* Sticky positioning keeps the button inside main, above the footer. */
+        position: sticky;
+        top: calc(100dvh - 85px);
+        z-index: 1;
     }
 
     .mobile-filter img {
         background-color: transparent;
         width: 20px;
+    }
+
+    .fliter-menu {
+        position: fixed;
+        inset: 0;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        max-width: calc(100% - 20px);
+        max-height: calc(100% - 20px);
+        overflow: auto;
     }
 
     .fliter-menu li:not(:first-child) {
