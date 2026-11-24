@@ -17,6 +17,20 @@ header {
         display: none;
     }
 
+    /* Materiaal indienen button styling */
+    .mobile-material,
+    .material-dskt {
+        padding: 14px 20px;
+        border: none;
+        background-color: var(--color-interactive-light);
+        font-family: "Quantico", sans-serif;
+        cursor: pointer;
+    }
+
+    .mobile-material {
+        display: inline-block;
+    }
+
     /* Hamburger menu styling */
     .hamburger-menu {
         order: 1;
@@ -63,6 +77,86 @@ header {
     }
 
 
+}
+
+/* DESKTOP HEADER */
+@media (min-width: 1150px) {
+    header {
+        gap: 52px;
+        padding: 18px 10.35%;
+        background-color: var(--color-neutral-light);
+
+        a,
+        img,
+        nav,
+        ul,
+        li {
+            background-color: transparent;
+        }
+
+        .logo {
+            display: block;
+            width: 55px;
+        }
+
+        .hamburger-menu,
+        .close-hamburger,
+        .menu li:last-child {
+            display: none;
+        }
+
+        /* show the mobile menu as a row on desktop */
+        .menu {
+            display: block;
+            position: static;
+            width: auto;
+            padding: 0;
+            margin-left: 11px;
+            border: none;
+            overflow: visible;
+        }
+
+        .menu ul {
+            flex-direction: row;
+            gap: 60px;
+            padding: 0;
+        }
+
+        .menu a {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-family: "Yrsa", Georgia, serif;
+            font-size: 15px;
+            line-height: 20px;
+            text-transform: capitalize;
+            white-space: nowrap;
+        }
+
+        .menu li:nth-child(-n + 2) a::after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-right: 1px solid;
+            border-bottom: 1px solid;
+            transform: translateY(-2px) rotate(45deg);
+        }
+
+        .icons {
+            padding: 0;
+        }
+
+        .header-icon {
+            display: block;
+            width: 20px;
+        }
+
+        .material-dskt {
+            display: block;
+            min-width: 170px;
+            font-size: 13px;
+        }
+    }
 }
 
 /* MAIN */
