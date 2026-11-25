@@ -219,6 +219,10 @@ main {
     }
 
     /* mobile filters styling */
+    .filter-section {
+        display: contents;
+    }
+
     .mobile-filter {
         display: grid;
         place-items: center;
@@ -395,12 +399,34 @@ main {
         }
 
         /* desktop category row */
+        .filter-section {
+            display: flow-root;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            min-height: 155px;
+            margin-bottom: 42px;
+            padding-top: 8px;
+            background-color: var(--light-accent);
+        }
+
+        .filter-section.is-hidden:not(:focus-within) {
+            transform: translateY(-100%);
+            visibility: hidden;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .filter-section {
+                transition: transform 200ms ease, visibility 200ms;
+            }
+        }
+
         .mobile-filter {
             position: static;
             float: left;
             width: 64px;
             height: 64px;
-            margin: 0 0 133px;
+            margin: 0;
         }
 
         .mobile-filter img {
@@ -416,7 +442,7 @@ main {
             min-height: 155px;
             max-width: none;
             max-height: none;
-            margin: 0 0 42px 80px;
+            margin: 0 0 0 80px;
             padding: 0;
             border: none;
             overflow: visible;
