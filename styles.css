@@ -23,6 +23,7 @@ header {
         padding: 14px 20px;
         border: none;
         background-color: var(--color-interactive-light);
+        color: var(--dark-accent);
         font-family: "Quantico", sans-serif;
         cursor: pointer;
     }
@@ -155,6 +156,18 @@ header {
             display: block;
             min-width: 170px;
             font-size: 13px;
+            transition: background-color 150ms ease, color 150ms ease;
+        }
+
+        .material-dskt:hover {
+            background-color: var(--dark-accent);
+            color: var(--color-interactive-light);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .material-dskt {
+                transition: none;
+            }
         }
     }
 }
