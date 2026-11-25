@@ -534,14 +534,43 @@ main {
             display: block;
         }
 
+        /* method card hover styling */
+        .tekenmethodes-grid article:not(.category-quote) {
+            position: relative;
+            isolation: isolate;
+        }
+
+        .tekenmethodes-grid article:not(.category-quote)::before {
+            content: "";
+            position: absolute;
+            inset: -8px;
+            z-index: -1;
+            border-bottom: 3px solid var(--color-interactive-light);
+            background-color: #ccc;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .tekenmethodes-grid a,
+        .tekenmethodes-grid h3 {
+            background-color: transparent;
+        }
+
+        .tekenmethodes-grid article:not(.category-quote):hover::before,
+        .tekenmethodes-grid article:not(.category-quote):focus-within::before {
+            opacity: 1;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .tekenmethodes-grid article:not(.category-quote)::before {
+                transition: opacity 150ms ease;
+            }
+        }
+
         .tekenmethodes-grid a {
             display: block;
             margin-top: 8px;
             text-decoration: none;
-        }
-
-        .tekenmethodes-grid a:hover {
-            text-decoration: underline;
         }
 
         .tekenmethodes-grid h3 {
